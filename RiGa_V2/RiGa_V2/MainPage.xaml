@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.MainPage">
+
+    <StackLayout>
+        <Grid >
+            <Image Source="logo_New.png" HeightRequest="200" WidthRequest="150"></Image>
+        </Grid>
+        <Label Text ="Rhino Games" FontFamily="Bree Serif" FontSize="30" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center"/>
+        <Button x:Name ="Login" Clicked="LoginBTN" Text="Login" Background="#001845" TextColor="#FFF" WidthRequest="230" HeightRequest="40" HorizontalOptions="Center" CornerRadius="15" />
+        <Button x:Name ="Reg" Clicked="RegBTN" Text="Register" Background="#001845" TextColor="#FFF" WidthRequest="230" HeightRequest="40" HorizontalOptions="Center" CornerRadius="15"/>
+        <StackLayout Orientation ="Horizontal" HorizontalOptions="Center">
+        <Image Source="FaceBookLogo.png" HeightRequest="50" WidthRequest="50"/>
+        <Image Source="TwitterLogo.png" HeightRequest="50" WidthRequest="50"/>
+        <Image Source="LinkedInLogo.png" HeightRequest="50" WidthRequest="50"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

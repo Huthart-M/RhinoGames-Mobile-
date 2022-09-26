@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.ViewModel.Login_Page"
+             xmlns:behaviors="clr-namespace:RiGa_V2.Code.Validation"
+             NavigationPage.IconColor="#001845">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" VerticalOptions="Center" BackgroundColor="#fafafa">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Frame BorderColor="#fafafa" Padding="1" HasShadow="False" CornerRadius="15" BackgroundColor="#fafafa" >
+                        <Image Source="Logo_New.png" HeightRequest="250" WidthRequest="250"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Spacing="10" Padding="5" VerticalOptions="Center">
+                    <Label Text="Email" />
+                    <Entry x:Name="EmailEntry" Placeholder="Enter Email">
+                        <Entry.Behaviors>
+                            <behaviors:LoginEmailValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Label Text="Password" />
+                    <Entry x:Name="PasswordEntry" IsPassword="true" Placeholder="Enter Password">
+                        <Entry.Behaviors>
+                            <behaviors:LoginPasswordValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <!-- Two buttons, one for a login the other for registering -->
+                    <Button x:Name="LoginButton" Text="Login" BackgroundColor="#001845" TextColor="White" Clicked="LoginButton_OnClicked" CornerRadius="15"/>
+                   
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

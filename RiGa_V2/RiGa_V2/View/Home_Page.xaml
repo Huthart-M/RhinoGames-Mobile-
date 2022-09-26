@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.View.Home_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" Margin="20">
+                <Label Text="Image Place holder " HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+            <Frame WidthRequest="300" HeightRequest="200" HorizontalOptions="Center" Margin="20">
+                <Label Text="Welcome to Rhino Games. This app is still under development and is currently in beta mode."/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

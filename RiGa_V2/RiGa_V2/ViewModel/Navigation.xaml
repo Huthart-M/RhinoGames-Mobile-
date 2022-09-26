@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RiGa_V2"
+             xmlns:view="clr-namespace:RiGa_V2.View"
+             x:Class="RiGa_V2.ViewModel.Navigation"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=LH.BottomBar.XamarinForms">
+    <view:Home_Page Icon="Home.png" xf:BottomBarPageExtensions.TabColor="#001845"/>
+    <view:Games_Page Icon="Games.png" xf:BottomBarPageExtensions.TabColor= "#002855"/>
+    <view:Teams_Page Icon="Profile.png" xf:BottomBarPageExtensions.TabColor="#023E75"/>
+    <view:Contact_Page Icon="Contact.png" xf:BottomBarPageExtensions.TabColor="#0353A4"/>
+    <view:About_Page Icon="infomation_icon.png" xf:BottomBarPageExtensions.TabColor="#0466CB"/>
+</xf:BottomBarPage>

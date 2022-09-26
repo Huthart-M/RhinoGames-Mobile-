@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.View.Reasults_Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Button x:Name="Teams_btn" Clicked="Teams_btn_Clicked" Text="Teams" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" HeightRequest="60" BackgroundColor="#001845" TextColor="white" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame HeightRequest="100" Grid.Row="0" Grid.Column="0">
+                        <Label Text="Image PlaceHolder" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"  />
+                    </Frame>
+                    <Frame HeightRequest="100" Grid.Row="1" Grid.Column="0">
+                        <Label Text="Image PlaceHolder" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"  />
+                    </Frame>
+                    <Frame HeightRequest="100" Grid.Row="2" Grid.Column="0">
+                        <Label Text="Image PlaceHolder" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"  />
+                    </Frame>
+                    <Frame HeightRequest="100" Grid.Row="3" Grid.Column="0">
+                        <Label Text="Image PlaceHolder" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"  />
+                    </Frame>
+
+                    <Label Text="Team name" Grid.Column="1" Grid.Row="0" TextColor="Black"/>
+                    <Label Text="Reasults" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" TextColor="Black"/>
+
+                    <Label Text="Team name" Grid.Column="1" Grid.Row="1" TextColor="Black"/>
+                    <Label Text="Reasults" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" TextColor="Black"/>
+
+                    <Label Text="Team name" Grid.Column="1" Grid.Row="2" TextColor="Black"/>
+                    <Label Text=" Reasults" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" TextColor="Black"/>
+
+                    <Label Text="Team name" Grid.Column="1" Grid.Row="3" TextColor="Black"/>
+                    <Label Text=" Reasults" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" TextColor="Black"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

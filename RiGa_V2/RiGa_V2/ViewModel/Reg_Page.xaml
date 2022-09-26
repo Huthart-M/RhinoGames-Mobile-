@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.ViewModel.Reg_Page"
+             xmlns:behaviors="clr-namespace:RiGa_V2.Code.Validation"
+             NavigationPage.IconColor="#001845">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5" VerticalOptions="StartAndExpand">
+                <StackLayout Spacing="1" Padding="5" VerticalOptions="Center">
+
+                    <Label Text="First Name" FontAttributes="Bold" FontSize="14" />
+                    <Entry x:Name="FirstNameRegistrationEntry" Placeholder="Enter First Name" FontSize="12" />
+
+                    <Label Text="Last Name" FontAttributes="Bold" FontSize="14" />
+                    <Entry x:Name="LastnameRegistrationEntry" Placeholder="Enter Last Name" FontSize="12" />
+
+                    <Label x:Name="EmailLabel" Text="Email" FontAttributes="Bold" FontSize="14"/>
+                    <Entry x:Name="EmailRegistrationEntry" Placeholder="Enter Email" FontSize="12">
+                        <Entry.Behaviors>
+                            <behaviors:EmailValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label x:Name="ConfirmEmailLable" Text=" Confirm Email" FontAttributes="Bold" FontSize="14"/>
+                    <Entry x:Name="EmailConfirmEntry" Placeholder="Confirm Email" FontSize="12">
+                        <Entry.Behaviors>
+                            <behaviors:ConfirmEmailValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="Password" FontAttributes="Bold" FontSize="14" />
+                    <Entry x:Name="PasswordRegistrationEntry" IsPassword="true" Placeholder="Enter Password" FontSize="12">
+                        <Entry.Behaviors>
+                            <behaviors:PasswordValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="Confirm Password" FontAttributes="Bold" FontSize="14" />
+                    <Entry x:Name="PasswordConfirmRegistrationEntry" IsPassword="true" Placeholder="Enter Password" FontSize="12">
+                        <Entry.Behaviors>
+                            <behaviors:ConfirmPasswordValidation/>
+                        </Entry.Behaviors>
+                    </Entry>
+
+                    <Label Text="Account Type" />
+                    <Picker x:Name="AccountTypePicker" HorizontalOptions="FillAndExpand" />
+                    <Button Clicked="BtnRegister_OnClicked" Text="Create Account" Margin="5" HeightRequest="35" WidthRequest="155"  BackgroundColor="#001845" TextColor="#fff" CornerRadius="15" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

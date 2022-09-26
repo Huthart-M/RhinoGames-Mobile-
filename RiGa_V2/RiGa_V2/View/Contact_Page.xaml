@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.View.Contact_Page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300" Margin="20" HeightRequest="3000" >
+                <StackLayout>
+                <Label Text="Phone Number : +44 12345678910" TextColor="Black" FontSize="Body"/>
+                <Label Text="Email : RhinoGames@Email.com" TextColor="Black" FontSize="Body"/>
+                    <Label Text="RhinoGames.com" TextColor="Black" FontSize="Body"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

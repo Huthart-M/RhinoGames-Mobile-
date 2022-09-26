@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.View.Games_Page">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="20" Grid.Column="0" Grid.Row="0">
+                    <Label Text="Image Place Holder " TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Game Price " Grid.Row="0" Grid.Column="0" Margin="40,225,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Name" Grid.Row="0" Grid.Column="1" Margin="0,50,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Desription" Grid.Row="0" Grid.Column="1" Margin="0,100,0,0" FontSize="Large" TextColor="Black"/>
+                
+                <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="20" Grid.Column="0" Grid.Row="1">
+                    <Label Text="Image Place Holder " TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Game Price " Grid.Row="1" Grid.Column="0" Margin="40,225,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Name" Grid.Row="1" Grid.Column="1" Margin="0,50,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Desription" Grid.Row="1" Grid.Column="1" Margin="0,100,0,0" FontSize="Large" TextColor="Black"/>
+
+                <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="20" Grid.Column="0" Grid.Row="2">
+                    <Label Text="Image Place Holder " TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Game Price " Grid.Row="2" Grid.Column="0" Margin="40,225,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Name" Grid.Row="2" Grid.Column="1" Margin="0,50,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Desription" Grid.Row="2" Grid.Column="1" Margin="0,100,0,0" FontSize="Large" TextColor="Black"/>
+
+                <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="20" Grid.Column="0" Grid.Row="3">
+                    <Label Text="Image Place Holder " TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Game Price " Grid.Row="3" Grid.Column="0" Margin="40,225,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Name" Grid.Row="3" Grid.Column="1" Margin="0,50,0,0" FontSize="Medium" TextColor="Black"/>
+                <Label Text="Game Desription" Grid.Row="3" Grid.Column="1" Margin="0,100,0,0" FontSize="Large" TextColor="Black"/>
+
+                
+
+            </Grid>
+         
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

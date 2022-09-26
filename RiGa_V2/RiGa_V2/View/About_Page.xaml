@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RiGa_V2.View.About_Page">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="15" Grid.Column="0" Grid.Row="0">
+                <Label Text="Image Place holder " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+            </Frame>
+            <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="15" Grid.Column="1" Grid.Row="1">
+                <Label Text="Image Place holder " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+            </Frame>
+            <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="15" Grid.Column="0" Grid.Row="1">
+                <Label Text="Image Place holder " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+            </Frame>
+            <Frame WidthRequest="140" HeightRequest="140" HorizontalOptions="Center" VerticalOptions="Center" Margin="15" Grid.Column="1" Grid.Row="0">
+                <Label Text="Image Place holder " HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+            </Frame>
+
+            <Frame WidthRequest="140" HeightRequest="200"  Margin="15" Grid.ColumnSpan="2" Grid.Row="2">
+                    <Label Text="Rhino Games is a Games company that hosts esports with thier own Games League of Heros and War Field" TextColor="Black"/>
+                </Frame>
+        
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
